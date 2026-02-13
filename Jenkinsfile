@@ -1,29 +1,16 @@
 pipeline {
     agent any
-
-    stages {
-        stage('Checkout') {
-            steps {
-                echo 'Code checkout stage'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Build stage running'
-            }
-        }
-
-        stage('Test') {
-            steps {
-                echo 'Test stage running'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploy stage running'
-            }
-        }
-    }
-}
+      stages{
+          stage('Build'){
+              steps{echo 'This is Building stage'}
+                   }
+          stage('test'){
+              steps{echo 'This is testing stage'}
+                   
+                }
+           stage('deploy'){
+               steps{echo 'This is deploying stage'}
+                }
+          }
+      }
+              
